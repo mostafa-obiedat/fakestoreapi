@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store API</title>
+</head>
+<body>
+    <header>
+        <h1>Fake Store API</h1>
+        <button id="create-product-btn">Add New Product</button>
+    </header>
+    <main>
+        <form id="create-product-form" style="display: none;">
+            <input type="text" id="product-title" placeholder="Title" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <textarea id="product-description" placeholder="Description" required></textarea>
+            <input type="text" id="product-image" placeholder="Image URL" required>
+            <button type="submit">Add Product</button>
+        </form>
+        <div id="product-list"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fake Store API</p>
+    </footer>
+<script src="app.js"></script>    
+</body>
+</html>
